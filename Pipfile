@@ -25,6 +25,7 @@ virtualenv = "==20.25.0"
 werkzeug = "==3.0.1"
 yarg = "==0.1.9"
 flask-migrate = "*"
+flask-sqlalchemy = "*"
 
 [dev-packages]
 
