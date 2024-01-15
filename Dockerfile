@@ -7,6 +7,11 @@ WORKDIR /flask-url-shortener
 COPY requirements.txt requirements.txt
 RUN pip3 install -r requirements.txt
 
+COPY Pipfile Pipfile.lock ./
+RUN pip install pipenv
+RUN pipenv install --dev --system --deploy
+#RUN pipenv shell
+
 COPY . .
 
-CMD [ "python3", "app.py"]
+CMD ["pipenv", "run", "python3", "main.py"]
