@@ -27,6 +27,7 @@ yarg = "==0.1.9"
 flask-migrate = "*"
 flask-sqlalchemy = "*"
 psycopg2 = "*"
+gunicorn = "*"
 
 [dev-packages]
 
